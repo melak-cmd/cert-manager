@@ -1,0 +1,10 @@
+helmCharts:
+- name: jetstack
+  includeCRDs: false
+  valuesInline:
+    global:
+      rbac: 
+        create: true
+  releaseName: cert-manager
+  version: 1.6.1
+  repo: https://charts.jetstack.io
